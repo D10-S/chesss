@@ -1,7 +1,10 @@
 package com.example.chess;
 
 import android.app.Activity;
+ codex/create-low-poly-2d-chess-game-xqj34w
+
  codex/create-low-poly-2d-chess-game-eswoll
+ main
 import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.View;
@@ -31,6 +34,8 @@ public class MainActivity extends Activity {
                 .setPositiveButton("Rematch", (dialog, which) -> chessView.resetGame())
                 .show();
     }
+ codex/create-low-poly-2d-chess-game-xqj34w
+
 
 import android.os.Bundle;
 import android.view.View;
@@ -59,5 +64,6 @@ public class MainActivity extends Activity {
     }
 
     private void setStatus(String text) { status.setText(text); }
+ main
  main
 }

@@ -18,6 +18,10 @@ jobs:
         with:
           distribution: temurin
           java-version: "21"
+ codex/create-low-poly-2d-chess-game-xqj34w
+
+
+ main
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
@@ -31,6 +35,9 @@ jobs:
 
       - name: Build debug APK
         run: gradle --no-daemon :app:assembleDebug
+ codex/create-low-poly-2d-chess-game-xqj34w
+
+
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
 
@@ -38,6 +45,7 @@ jobs:
         run: gradle :app:assembleDebug
         
   main:
+ main
       - name: Rename APK for download
         run: mkdir -p dist && cp app/build/outputs/apk/debug/app-debug.apk dist/chess-debug.apk
 
